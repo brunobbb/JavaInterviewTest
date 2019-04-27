@@ -70,8 +70,6 @@ public class ReadWriteLockDemo {
                 myCache.write(str,str);
             },String.valueOf(i)).start();
         }
-
-
         for (int i = 0; i < 5; i++) {
             final String str = String.valueOf(i);
             new Thread(()->{
